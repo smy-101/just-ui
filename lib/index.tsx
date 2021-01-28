@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import Icon from './icon';
+import Icon from './icon/icon';
 
 ReactDOM.render(<div>
     <Icon name="page"/>
-</div>, document.body);
+</div>, document.querySelector('#root'));
