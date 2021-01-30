@@ -3,7 +3,10 @@
 module.exports = {
     verbose: true,
     clearMocks: false,
-    reporters: ["default"],
+    reporters: ["default", ['jest-junit', {
+        outputDirectory: "./test-results/jest",
+        outputName: "results.xml",
+    }]],
     collectCoverage: true,
     collectCoverageFrom: ["lib/**/*.{ts,tsx}", "!**/node_modules/**"],
     coverageDirectory: 'coverage',
